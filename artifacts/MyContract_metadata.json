@@ -6,31 +6,31 @@
 	"output": {
 		"abi": [
 			{
-				"constant": false,
+				"constant": true,
 				"inputs": [
 					{
-						"name": "_string",
-						"type": "string"
+						"name": "",
+						"type": "address"
 					}
 				],
-				"name": "stringsetter",
-				"outputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"constant": true,
-				"inputs": [],
-				"name": "myString",
+				"name": "myMap",
 				"outputs": [
 					{
 						"name": "",
-						"type": "string"
+						"type": "bool"
 					}
 				],
 				"payable": false,
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "selectWhitelist",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -43,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"strings.sol": "MyContract"
+			"mapping.sol": "MyContract"
 		},
 		"evmVersion": "byzantium",
 		"libraries": {},
@@ -54,10 +54,10 @@
 		"remappings": []
 	},
 	"sources": {
-		"strings.sol": {
-			"keccak256": "0x6ead1b46a9ffbfda4167819d07e54f1512946cad7f127b57b9856285f5b32faa",
+		"mapping.sol": {
+			"keccak256": "0x72726f00387baba11c66fac4bb84aaf19dd693e19af98a27fac8a3a19e222385",
 			"urls": [
-				"bzzr://604ef4589aeb35f7ca8abfecd90dc9318983d0d64b24b8a0bbf4f768cd84a6b2"
+				"bzzr://e417de85a27f658dd7f27d7387916bd4f8ef24c0bf2e65e4590089026b356e63"
 			]
 		}
 	},

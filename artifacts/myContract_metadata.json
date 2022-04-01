@@ -6,23 +6,14 @@
 	"output": {
 		"abi": [
 			{
-				"constant": true,
-				"inputs": [],
-				"name": "getBalance",
-				"outputs": [
+				"constant": false,
+				"inputs": [
 					{
-						"name": "",
-						"type": "uint256"
+						"name": "_to",
+						"type": "address"
 					}
 				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": false,
-				"inputs": [],
-				"name": "withdraw",
+				"name": "destroyContract",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
@@ -31,7 +22,7 @@
 			{
 				"constant": true,
 				"inputs": [],
-				"name": "getbalance",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"name": "",
@@ -50,7 +41,7 @@
 						"type": "address"
 					}
 				],
-				"name": "withdrawTo",
+				"name": "withdraw",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
@@ -59,11 +50,26 @@
 			{
 				"constant": false,
 				"inputs": [],
-				"name": "recieveMoney",
+				"name": "pause",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "recieve",
 				"outputs": [],
 				"payable": true,
 				"stateMutability": "payable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
 			}
 		],
 		"devdoc": {
@@ -75,7 +81,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"moneyWithdraw.sol": "myContract"
+			"startstoppause.sol": "myContract"
 		},
 		"evmVersion": "byzantium",
 		"libraries": {},
@@ -86,10 +92,10 @@
 		"remappings": []
 	},
 	"sources": {
-		"moneyWithdraw.sol": {
-			"keccak256": "0xc57df1a7598f54ba1d6f5cc43c6208ff1e7a68d32724d79027b1d6813b3286c1",
+		"startstoppause.sol": {
+			"keccak256": "0xd1cbb7b24bdcf77432cc39d9593f4e0462be8a52487f86255eab37d2bda3339b",
 			"urls": [
-				"bzzr://ee5c294afc1ba58620a10b7ed2ff28a9b58a803751b7e115d0d6c7937dfbc35c"
+				"bzzr://a7930b11df677e025afca0fae21eed12dcd257f190facc45c3cd12d9acb96a0f"
 			]
 		}
 	},
