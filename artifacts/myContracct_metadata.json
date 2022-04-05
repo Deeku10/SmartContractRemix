@@ -13,19 +13,11 @@
 						"type": "address"
 					}
 				],
-				"name": "getInstructor",
+				"name": "getBalanceOfAdddress",
 				"outputs": [
 					{
 						"name": "",
 						"type": "uint256"
-					},
-					{
-						"name": "",
-						"type": "string"
-					},
-					{
-						"name": "",
-						"type": "string"
 					}
 				],
 				"payable": false,
@@ -33,22 +25,12 @@
 				"type": "function"
 			},
 			{
-				"constant": true,
-				"inputs": [
-					{
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "instructorAccount",
-				"outputs": [
-					{
-						"name": "",
-						"type": "address"
-					}
-				],
-				"payable": false,
-				"stateMutability": "view",
+				"constant": false,
+				"inputs": [],
+				"name": "recieveMoney",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -59,19 +41,11 @@
 						"type": "address"
 					},
 					{
-						"name": "age",
+						"name": "amount",
 						"type": "uint256"
-					},
-					{
-						"name": "fname",
-						"type": "string"
-					},
-					{
-						"name": "lname",
-						"type": "string"
 					}
 				],
-				"name": "setInstructor",
+				"name": "withdraw",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
@@ -87,7 +61,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"struct.sol": "MyContract"
+			"mappingWithStructs.sol": "myContracct"
 		},
 		"evmVersion": "byzantium",
 		"libraries": {},
@@ -98,10 +72,10 @@
 		"remappings": []
 	},
 	"sources": {
-		"struct.sol": {
-			"keccak256": "0xae5686c9548ad5c7bbcbef266e9ce510eba8ec42a12730392dc1d76c7af7c018",
+		"mappingWithStructs.sol": {
+			"keccak256": "0xae452069439e5f80c5c2fc14c580ddb217ad7d9964ade4d7325c2c794da0b2e7",
 			"urls": [
-				"bzzr://d4245774a2d7a0c9ae94deaf164b6b40422c7eab48fa741d04c5edf77c7ed7f0"
+				"bzzr://d3d046fb0c9fa8b4f0a76cdc05e61190d416e13f2175644a866fb876a1ab2cdf"
 			]
 		}
 	},
